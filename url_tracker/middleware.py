@@ -10,7 +10,7 @@ class URLChangePermanentRedirectMiddleware(object):
         if response.status_code != 404:
             return response # No need to check for non-404 responses.
         try:
-            requested_url = request.path_info
+            requested_url = request.get_full_path()
             redirect_url = URLChangeRecord.objects.get(old_url__exact=requested_url)
             if redirect_url.deleted:
                 return http.HttpResponseGone()
