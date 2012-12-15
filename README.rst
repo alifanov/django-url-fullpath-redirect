@@ -10,6 +10,8 @@ django-url-fullpath-redirect
 Установка
 ------------
 
+Просто::
+
     pip install django-url-fullpath-redirect
 
 Настройка
