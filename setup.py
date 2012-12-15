@@ -10,13 +10,12 @@ To release a new version to PyPi:
 from setuptools import setup, find_packages
 
 setup(
-    name = "django-url-tracker",
-    version = '0.1.1',
-    url = "https://github.com/tangentlabs/django-url-tracker",
-    author = "Sebastian Vetter",
-    author_email = "sebastian.vetter@tangentone.com.au",
-    description = ("A little app that trackes URL changes in a database table "
-                  "to provide HTTP 301 & 410 on request."),
+    name = "django-url-fullpath",
+    version = '0.1.2',
+    url = "https://github.com/alifanov/django-url-fullpath-redirect",
+    author = "Lifanov Alexander",
+    author_email = "lifanov.a.v@gmail.com",
+    description = ("Fork of django-url-tracker with query_string support"),
     long_description = open('README.rst').read(),
     license = "BSD",
     packages = find_packages(exclude=["docs*", "tests*"]),
